@@ -1,0 +1,10 @@
+.container{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.tag{
+    border-radius: 10px;
+    box-shadow:2px 2px 2px 2px black;
+    width: 75%;
+    border: 1px solid black;
+}

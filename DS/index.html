@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Event</title>
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+<body>
+    <p>Characters of Demon slayer</p>
+    <button>Click</button>
+<p id="ptag"></p>
+<img height="418px" width="338px" id="image" src="" alt="image">
+<script>
+  let button = document.querySelector("button");
+  button.addEventListener("click", () => {
+    console.log("Button clicked.");
+    let p=document.querySelector("p");
+    let random=Math.floor(Math.random() * 10);
+   // let ldink="https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/f/f3/Kokushibo_colored_body.png/revision/latest?cb=20200413041714";
+    let link=["image/Tanjiro.jpeg",
+    "image/Akaza.jpeg",
+    "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/f/f3/Kokushibo_colored_body.png/revision/latest?cb=20200413041714",
+    "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/4/4d/Nezuko_anime.png/revision/latest?cb=20211119014953",
+    "image/Zenitsu.jpeg",
+    "image/Doma.jpeg",
+    "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/1/15/Yoriichi_colored_body_2.png/revision/latest?cb=20210502001804",
+    "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/d/d4/Inosuke_anime.png/revision/latest?cb=20181128204238",
+    "image/Rengoku.jpeg",
+    "image/Tengen.jpeg"
+  ]
+    document.querySelector("img").src=link[random];
+    let name=["Tanjiro","Akaza","Kokushibo","Nezuko","Zenitsu","Doma","Yoriichi","Inosuke","Rengoku","Tengen"]
+    document.getElementById("ptag").innerHTML=name[random];
+  });
+</script>
+<div class="container">
+  <section>
+    <article class="tag">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem quam necessitatibus soluta eum beatae autem aperiam aut quos reprehenderit laborum nemo obcaecati explicabo tenetur veritatis, alias veniam magni minima? Mollitia?</p>
+    </article>
+  </section>
+</div>
+</body>
+</html>
